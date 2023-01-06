@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: conic-gradient(#ffead5, rgba(255, 119, 92, 0.671), rgb(255, 212, 195));
+  height: 100vh;
+  backdrop-filter: blur(40px);
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: conic-gradient(#ffead5, rgba(255, 119, 92, 0.671), rgb(255, 212, 195));
+    height: 100vh;
+    backdrop-filter: blur(40px);
+  }
+}
