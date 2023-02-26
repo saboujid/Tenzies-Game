@@ -1,32 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,800;1,800&display=swap');
 
 .App {
-    position: relative;
-    width: 320px;
-    height: 330px;
-    background-color: #fffbfb4a;
-    border-radius: 10px;
-    top: 100px;
-    left: 30%;
+    
     font-family: 'Poppins';
     text-align: center;
-    transform: scale(1.7);
-    transform-origin: 0% 0% 0px;
-    box-shadow:10px 10px 15px rgba(0, 0, 0, 0.15);
-
+    display: flex;
+    justify-content: center;
 }
 
-@media (max-width: 600px) {    
-    .App{
-        left: 10%;
-        transform: scale(1);
-    }
-}
+
 
 .container {
+    position: relative;
+    transform: scale(1.7);
     padding: 35px;
     padding-top: 20px;
     padding-bottom: 10px;
+    width: 320px;
+    height: 360px;
+    background-color: #fffbfb4a;
+    border-radius: 10px;
+    box-shadow:10px 10px 15px rgba(0, 0, 0, 0.15);
+    top: 260px;
 }
 
 .container h1 {
@@ -36,8 +31,12 @@
     margin: 0;
 }
 
+#logo{
+    width: 100px;
+}
+
 .container p {
-    margin-top: 0;
+    margin-top: 10px;
     color: #2B283A;
     font-weight: 300;
     font-size: 12px;
@@ -62,6 +61,7 @@
     border-radius: 3.81277px;
     cursor: pointer;
     font-weight: 400;
+    color: black;
 }
 
 .held button{
@@ -109,4 +109,11 @@
 .credits p a:hover{
     color: tomato;
     transition: 0.4s;
+}
+
+@media screen and (max-width: 600px) {    
+    .container{
+        top: 100px;
+        transform: scale(1);
+    }
 }

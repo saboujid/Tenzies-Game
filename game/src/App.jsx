@@ -4,7 +4,7 @@ import Die from './components/Die'
 import { nanoid } from "nanoid"
 import Confetti from 'react-confetti'
 import Timer from './components/Timer'
-
+import logo from './assets/logo.png'
 
 function App() {
   const [dice, setDice] = React.useState(allNewDice())
@@ -96,9 +96,9 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Tenzies</h1>
+        <img src={logo} id='logo' />
         <p>
-          Roll until all dice are the same.
+          Roll until all dices are the same.
           Click each die to freeze it at its current value between rolls.
         </p>
         <div className="tries">
@@ -117,13 +117,11 @@ function App() {
         {tenzies && <Confetti
           width="320px"
           height="320px" />}
+      <div className="credits">
+        <p>Made By<a href="https://github.com/saboujid"> Saboujid</a></p>
+      </div>
       </div>
       
-      <div className="credits">
-        
-        <p>Made By<a href="https://github.com/saboujid"> Saboujid</a></p>
-
-      </div>
     </div >
   )
 }
